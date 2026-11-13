@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — Полевые записки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+<header class="header">
+  <div class="container header__inner">
+    <a
+      class="header__logo" href="index.html#top" aria-label="Полевые записки"
+    >
+      <span class="header__logo-text">Полевые<br><span class="header__logo-line">записки</span></span>
+    </a>
+
+    <button
+      class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="header-menu"
+    >
+      <span></span> <span></span> <span></span>
+    </button>
+    <nav
+      class="header__menu menu" aria-label="Основная навигация"
+    >
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a
+            class="menu__link" href="index.html"
+          >Главная
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="about.html" aria-current="page">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="index.html#bouquets">Букеты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="index.html#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__order-button button" type="button">
+      Заказать букет <span aria-hidden="true">⟶</span>
+    </button>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title title">
+          О нас
+        </h1>
+        <p class="hero__text hero__text--wide">Цветочное ателье «Полевые записки» — это любовь к природе, сезонным цветам и простым радостям, которые они приносят в повседневную жизнь.</p>
+      </div>
+    </div>
+    <div class="hero__bg">
+      <img src="./img/home/hero/hero-bg.png" alt="">
+    </div>
+  </section>
+  <section class="story" aria-labelledby="story-title">
+    <div class="image-content image-content--inset">
+      <div class="image-content__image-wrap">
+        <img class="image-content__image" src="./img/about/story-image.png" alt="Флористка собирает букет из сезонных цветов в ателье">
+      </div>
+      <div class="image-content__content section-intro">
+        <p class="section-intro__eyebrow">Наша история</p>
+        <h2 class="section-intro__title title" id="story-title">Как всё началось</h2>
+        <p class="section-intro__text">«Полевые записки» родились из желания привнести в городскую жизнь больше живой природы и естественной красоты.</p>
+        <p class="section-intro__text">Мы начали с небольшого домашнего ателье, где собирали букеты для друзей, а со временем это увлечение выросло в полноценное дело.</p>
+      </div>
+    </div>
+  </section>
+  <section class="advantages" aria-label="Наши ценности">
+    <div class="container">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img class="advantages__icon" src="./img/icons/branch.svg" alt="">
+          <p class="advantages__text">Сезонные <br> цветы</p>
+        </li>
+        <li class="advantages__item">
+          <img class="advantages__icon" src="./img/icons/flower.svg" alt="">
+          <p class="advantages__text">Естественные композиции</p>
+        </li>
+        <li class="advantages__item">
+          <img class="advantages__icon" src="./img/icons/heart.svg" alt="">
+          <p class="advantages__text">Забота <br> в деталях</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="studio" aria-labelledby="studio-title">
+    <div class="image-content image-content--reverse">
+      <div class="image-content__image-wrap">
+        <img class="image-content__image" src="./img/about/studio-image.png" alt="Рабочее пространство цветочного ателье с сезонными букетами">
+      </div>
+      <div class="image-content__content section-intro">
+        <p class="section-intro__eyebrow">Ателье</p>
+        <h2 class="section-intro__title title" id="studio-title">Наше <br> пространство</h2>
+        <p class="section-intro__text">В нашем ателье мы создаём букеты, работаем с сезонными цветами, проводим камерные встречи и делимся любовью к природе.</p>
+        <a class="button button--transparent studio__button" href="#contacts">Заглянуть в ателье <span aria-hidden="true">⟶</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="quote" aria-label="Философия ателье">
+    <div class="quote__inner">
+      <span class="quote__mark" aria-hidden="true">“</span>
+      <p class="quote__text">Мы верим, что цветы — это не только украшение, но и способ замедлиться, почувствовать сезон и по-новому взглянуть на привычное.</p>
+    </div>
+    <div class="quote__bg">
+      <img src="./img/about/quote-bg.png" alt="">
+    </div>
+  </section>
+</main>
+<footer class="footer" id="contacts">
+  <div class="container footer__inner">
+    <a class="footer__logo" href="index.html#top" aria-label="Полевые записки — главная">
+      <span class="footer__logo-text">Полевые<br>записки</span>
+    </a>
+    <p class="footer__tagline">Цветочное ателье<br>о природе, людях и моментах.</p>
+    <address class="footer__contacts">
+      <a class="footer__link" href="tel:+74951204688">+7 (495) 120-46-88</a>
+      <a class="footer__link" href="mailto:hello@polevyezapiski.ru">hello@polevyezapiski.ru</a>
+      <ul class="footer__social-list" aria-label="Мы в социальных сетях">
+        <li><a class="footer__social-link" href="https://www.instagram.com/" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+        </a></li>
+        <li><a class="footer__social-link" href="https://t.me/" aria-label="Telegram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M226.27,29.22a5,5,0,0,0-5.1-.87L18.51,107.66a10.22,10.22,0,0,0,1.75,19.56L76,138.16V200a12,12,0,0,0,7.51,11.13A12.1,12.1,0,0,0,88,212a12,12,0,0,0,8.62-3.68l28-29,43,37.71a12,12,0,0,0,7.89,3,12.47,12.47,0,0,0,3.74-.59,11.87,11.87,0,0,0,8-8.72L227.87,34.12A5,5,0,0,0,226.27,29.22ZM20,117.38a2.13,2.13,0,0,1,1.42-2.27L196.07,46.76l-117,83.85L21.81,119.37A2.12,2.12,0,0,1,20,117.38Zm70.87,85.38A4,4,0,0,1,84,200V143.7L118.58,174Zm88.58,6.14a4,4,0,0,1-6.57,2.09L86.43,135.18,218.13,40.8Z"/></svg>
+        </a></li>
+        <li><a class="footer__social-link" href="https://vk.com/" aria-label="ВКонтакте">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true" focusable="false"><path d="M62.63,50.27C59.74,39.75,51.8,33.93,48.52,31.91c11.51-8.38,11.73-18.02,11.73-18.44c0-0.27-0.1-0.52-0.29-0.71  c-0.19-0.19-0.44-0.3-0.71-0.3h-9.64c-0.44,0-0.83,0.29-0.96,0.71c-3.14,10.16-9.51,12.98-12.1,13.72V13.46c0-0.55-0.45-1-1-1h-9.39  c-0.55,0-1,0.45-1,1V37.7c-3-1.47-10.5-6.87-11.35-24.28c-0.03-0.53-0.47-0.95-1-0.95H2.33c-0.55,0-1,0.45-1,1v3.83  c0,18.88,15.36,34.24,34.23,34.24c0.55,0,1-0.45,1-1V38.47c10.52,1.92,13.45,11.9,13.58,12.33c0.12,0.43,0.52,0.73,0.96,0.73h10.57  c0.31,0,0.61-0.15,0.79-0.39C62.66,50.89,62.72,50.57,62.63,50.27z M51.81,49.54c-0.99-2.68-5.18-11.9-16.13-13.22  c-0.28-0.04-0.57,0.05-0.78,0.25c-0.21,0.19-0.34,0.46-0.34,0.75v12.21C17.25,48.99,3.33,34.74,3.33,17.29v-2.83h8.55  c1.42,22.35,13.53,25.54,14.06,25.67c0.3,0.07,0.61,0,0.85-0.19s0.38-0.48,0.38-0.79v-24.7h7.39v13.67c0,0.29,0.12,0.56,0.34,0.75  c0.21,0.19,0.5,0.28,0.78,0.25c0.42-0.05,10.24-1.36,14.67-14.66h7.8c-0.42,2.69-2.43,10.26-12.05,16.7c-0.3,0.2-0.46,0.54-0.44,0.9  c0.02,0.36,0.23,0.67,0.55,0.83c0.11,0.05,10.37,5.27,14.12,16.64H51.81z"/></svg>
+        </a></li>
+      </ul>
+    </address>
+  </div>
+</footer>
+<dialog class="order-popup" id="order-popup" aria-labelledby="order-popup-title">
+  <div class="order-popup__inner">
+    <form class="order-popup__close-form" method="dialog">
+      <button class="order-popup__close" type="submit" aria-label="Закрыть окно">×</button>
+    </form>
+    <div class="order-popup__mobile-brand" aria-hidden="true">
+      <img src="./img/icons/sprout.svg" alt="">
+      <span>Полевые<br>записки</span>
+    </div>
+    <div class="order-popup__image-wrap">
+      <img class="order-popup__image" src="./img/home/bouquets/meadow-bouquet.png" alt="Букет «Луговой»">
+    </div>
+    <div class="order-popup__content">
+      <p class="order-popup__eyebrow">Полевые записки</p>
+      <h2 class="order-popup__title title" id="order-popup-title">Заказать букет</h2>
+      <p class="order-popup__intro">Оставьте заявку, и мы свяжемся с вами, чтобы уточнить детали заказа.</p>
+      <form class="order-popup__form">
+        <div class="order-popup__field">
+          <label for="order-name">Ваше имя <span aria-hidden="true">*</span></label>
+          <div class="order-popup__field-control">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>
+            <input id="order-name" name="name" type="text" autocomplete="name" placeholder="Например, Анастасия" required>
+          </div>
+        </div>
+        <div class="order-popup__field">
+          <label for="order-phone">Телефон <span aria-hidden="true">*</span></label>
+          <div class="order-popup__field-control">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+            <input id="order-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+        <div class="order-popup__field">
+          <label for="order-bouquet">Букет</label>
+          <div class="order-popup__field-control">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 12 8 5l4-3 4 3-4 7Zm0 0 8-1-1 5-5 1-2-5Zm0 0-3 8-4-3 1-5 6 0Zm0 0-8-4 4-3 5 3-1 4Zm0 0 6-6 2 5-4 4-4-3ZM12 12l1 9m-4 0h8"/></svg>
+            <select id="order-bouquet" name="bouquet">
+              <option value="meadow" selected>Луговой</option>
+              <option value="garden">Садовый</option>
+              <option value="sunset">Закатный</option>
+            </select>
+          </div>
+        </div>
+        <fieldset class="order-popup__sizes">
+          <legend>Размер букета</legend>
+          <label class="order-popup__size-option">
+            <input type="radio" name="size" value="S">
+            <span><strong>S</strong><small>≈ 30 см</small></span>
+          </label>
+          <label class="order-popup__size-option">
+            <input type="radio" name="size" value="M" checked>
+            <span><strong>M</strong><small>≈ 40 см</small></span>
+          </label>
+          <label class="order-popup__size-option">
+            <input type="radio" name="size" value="L">
+            <span><strong>L</strong><small>≈ 50 см</small></span>
+          </label>
+        </fieldset>
+        <div class="order-popup__field">
+          <label for="order-wishes">Ваши пожелания</label>
+          <div class="order-popup__field-control order-popup__field-control--textarea">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.1-5.3A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            <textarea id="order-wishes" name="wishes" rows="3" placeholder="Например: упаковать в крафт, добавить открытку..."></textarea>
+          </div>
+        </div>
+        <button class="order-popup__submit button" type="submit">Отправить заявку <span aria-hidden="true">⟶</span></button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
